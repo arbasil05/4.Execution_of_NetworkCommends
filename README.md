@@ -28,8 +28,18 @@ This commands includes
 <BR>
 • Other IP Commands e.g. show ip route etc.
 <BR>
+# Program:
+```
+from scapy.all import *
 
-## Output
+target = "www.google.com"
+result, _ = traceroute(target, maxttl=32)
+print(result)
+```
+
+## Output:
+![image](https://github.com/arbasil05/4.Execution_of_NetworkCommends/assets/144218037/d5a38322-fb47-4aa2-935e-9481bcb561c9)
+
 
 ## Result
 Thus Execution of Network commands Performed 
